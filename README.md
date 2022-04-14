@@ -25,7 +25,7 @@ import "github.com/ilmiofiume/iris-go"
 func main() {
   c := iris.New(FgRed, BgWhite)
   c.Printf("Hello, %s\n!", "Iris")
-  iris.Red("This is a error!!!!")
+  iris.Red("This is an error!!!!")
 }
 ```
 
