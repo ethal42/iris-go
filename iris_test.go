@@ -1,9 +1,11 @@
 package iris
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestIris(t *testing.T) {
-	c := New(FgRed, BgWhite)
-	c.Printf("Hello, %s\n", "Iris")
-	Red("THIS IS A FATAL ERROR!!!11")
+	c := New(Bold, FgMagenta)
+	fmt.Println(c.Sprintf("this is test of %s", "Color.Sprintf()"))
 }

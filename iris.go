@@ -75,8 +75,12 @@ func (c *Color) seq() string {
 	return strings.Join(format, ";")
 }
 
-func (c *Color) generate(s string) string {
+func (c *Color) Sprint(s string) string {
 	return c.format() + s + c.reset()
+}
+
+func (c *Color) Sprintf(s string, a ...interface{}) string {
+	return c.format() + fmt.Sprintf(s, a...) + c.reset()
 }
 
 func (c *Color) format() string {
